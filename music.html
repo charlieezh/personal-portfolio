@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "dnq1bzk",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+      <h1>My Music Works</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="https://drive.google.com/drive/folders/1EzdBSE05hHUkMyHSQdspTNaKC9XTPoXd?usp=sharing">Music</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="https://drive.google.com/file/d/1WlI0RAnhuO0OLXfT7tILqwwyW4weuzTd/view?usp=sharing">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Performances</h2>
+        <video class="videos" src="video/1.MOV" controls>
+        </video>
+        <video src="performance2.mp4" controls>
+        </video>
+      </section>
+      <section>
+        <h2>Music Productions</h2>
+        <audio src="composition1.mp3" controls></audio>
+        <audio src="composition2.mp3" controls></audio>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>- More about Me -</p>
+        <p>zfzheng@umich.edu</p>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/charliezh/"
+            class="logo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="image/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.instagram.com/caribougogo/?hl=en"
+            class="logo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="image/instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://github.com/charlieezh"
+            target="_blank"
+            class="logo"
+            rel="noopener noreferrer"
+          >
+            <img src="image/github.svg" alt="GitHub" />
+          </a>
+        </div>
+        <p>&copy; 2024 Charlie Zheng All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

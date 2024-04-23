@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Photography</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "dnq1bzk",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>My Photography Works</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/1EzdBSE05hHUkMyHSQdspTNaKC9XTPoXd?usp=sharing"
+              >Music</a
+            >
+          </li>
+          <li><a class="active" href="photos.html">Photos</a></li>
+          <li><a href="activities.html">Activities</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="photos">
+        <a href="image/1.jpg" target="_blank" data-lightbox="image-1"
+          ><img src="image/1.jpg" alt="Landscape"
+        /></a>
+        <a href="image/2.jpg" target="_blank" data-lightbox="image-2"
+          ><img src="image/2.jpg" alt="Landscape"
+        /></a>
+        <a href="image/3.jpg" target="_blank" data-lightbox="image-3"
+          ><img src="image/3.jpg" alt="Landscape"
+        /></a>
+        <a href="image/4.jpg" target="_blank" data-lightbox="image-4"
+          ><img src="image/4.jpg" alt="Landscape"
+        /></a>
+        <a href="image/5.jpg" target="_blank" data-lightbox="image-5"
+          ><img src="image/5.jpg" alt="Portrait"
+        /></a>
+        <a href="image/6.jpg" target="_blank" data-lightbox="image-6"
+          ><img src="image/6.jpg" alt="Portrait"
+        /></a>
+        <a href="image/7.jpg" target="_blank" data-lightbox="image-7"
+          ><img src="image/7.jpg" alt="Portrait"
+        /></a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>- More about Me -</p>
+        <p>zfzheng@umich.edu</p>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/charliezh/"
+            class="logo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="image/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.instagram.com/caribougogo/?hl=en"
+            class="logo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="image/instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://github.com/charlieezh"
+            target="_blank"
+            class="logo"
+            rel="noopener noreferrer"
+          >
+            <img src="image/github.svg" alt="GitHub" />
+          </a>
+        </div>
+        <p>&copy; 2024 Charlie Zheng All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+  </body>
+</html>

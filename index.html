@@ -6,39 +6,62 @@
     <title>Charlie Zheng</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'dnq1bzk',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   </head>
   <body>
     <header>
-      <h1>Welcome to My Personal Portfolio</h1>
+      <div class="header">
+      <h1>Charlie Zheng</h1>
+      <h1>鄭湛鋒</h1>
+      </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="music.html">Music</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="https://drive.google.com/drive/folders/1EzdBSE05hHUkMyHSQdspTNaKC9XTPoXd?usp=sharing">Music</a></li>
           <li><a href="photos.html">Photos</a></li>
           <li><a href="activities.html">Activities</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h2>About Me</h2>
-        <p>
-          This is a brief paragraph about yourself. Highlight what you do, your
-          passions, and what makes you unique.
+      <div class="container">
+      <section class="about">
+        <p class="intro">
+          Hello! I'm Charlie Zheng, a rising Junior at the University of Michigan double majoring in Computer Science and Economics with minors in Data Science and UX Design. I am passionate about software engineering and web development and I thrive on creating innovative software solutions and elegant websites that enhance user experience and accessibility. 
+          
+          Outside of coding, I have a vibrant creative life expressed through singing and music production, where I explore the harmonies of sound. Also, Photography allows me to capture and share the world's aesthetic and narrative through my lens. Welcome to my personal site, where I not only share my professional projects but also personal artistic endeavors with you all! 
         </p>
       </section>
-      <section>
-        <h2>Latest Highlights</h2>
-        <p>
-          Share some recent achievements or projects. Maybe a brief overview of
-          what's new with your music, photography, or other activities.
-        </p>
+      <section class="cards">
+          <div class="overlay">
+        <a href="https://drive.google.com/drive/folders/1EzdBSE05hHUkMyHSQdspTNaKC9XTPoXd?usp=sharing"><img src="image/singing.jpg" alt="me singing"/></a>
+      <div class="text-overlay"><span>My</span><span>Singing</span><span>Performances</span></div>
+      </div>
+      <div class="overlay">
+        <a href="photos.html"><img src="image/photography.JPG" alt="me taking pictures"/></a>
+        <div class="text-overlay"><span>My</span><span>Photography</span><span>Works</span></div>
+      </div>
+      <div class="overlay">
+        <a href="activities.html"><img src="image/act.jpg" alt="me in a datathon"/></a>
+        <div class="text-overlay"><span>My</span><span>Activities</span></div>
+        </div>
       </section>
+      </div>
     </main>
     <footer>
       <div class="footer-container">
       <p>- More about Me -</p>
-      <a href="zfzheng@umich.edu">zfzheng@umich.edu</a>
+      <p>zfzheng@umich.edu</p>
       <div class="social-icons">
         <a
           href="https://www.linkedin.com/in/charliezh/"
